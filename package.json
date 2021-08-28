@@ -1,0 +1,65 @@
+{
+  "name": "@zedelashvililevani/redux-life-saver",
+  "version": "0.3.0",
+  "private": false,
+  "description": "",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files" : [
+    "dist/",
+    "package.json"
+  ],
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.3",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^12.20.4",
+    "@types/react": "^17.0.2",
+    "@types/react-redux": "^7.1.16",
+    "immer": "^7.0.15",
+    "react": "^17.0.1",
+    "redux": "^4.0.0",
+    "rollup": "^1.27.13",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "typescript": "^4.2.2",
+    "tslib": "^2.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0",
+    "react-redux": "^5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-redux": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "build": "rm -rf dist && rollup -c && tsc --emitDeclarationOnly",
+    "start": "rollup -c -w",
+    "prepublish:public": "npm run build",
+    "publish:public": "npm publish --access public"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zedelashvililevani/redux-life-saver.git"
+  },
+  "author": "zedelashvililevani",
+  "bugs": {
+    "url": "https://github.com/zedelashvililevani/redux-life-saver/issues"
+  },
+  "homepage": "https://github.com/zedelashvililevani/redux-life-saver#readme"
+}
