@@ -1,6 +1,6 @@
 {
   "name": "@zedelashvililevani/redux-life-saver",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "private": false,
   "description": "",
   "types": "dist/index.d.ts",
