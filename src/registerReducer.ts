@@ -1,7 +1,6 @@
 import produce from 'immer';
 import { Action, InitialState, IState } from './types';
 import { ActionsEnum } from './enums';
-// This must be enum, but whatever
 
 interface RegisterReducerParams<T> {
   reducerName: string;
@@ -29,8 +28,6 @@ export function registerReducer<TData = any>({
   onError,
 }: RegisterReducerParams<TData>): ReducerResult<TData> {
   const reducer = (state: InitialState<TData | null>, action: Action<TData>) => {
-    // console.log(action.type, action, action.error, reducerName);
-    // this will provide O(n) instead of O(n * cases)
     if (!state) return { [reducerName]: initialState };
     if (action.reducer !== reducerName) return state;
     return produce(state, (draft: InitialState<TData | null>) => {

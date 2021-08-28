@@ -28,7 +28,6 @@ export const initUseData = ({
   fetchOptions = {},
   customFetch = fetcher,
 }: initParams) => {
-  // main thing to use xD
   const useReadCache = initReadCache();
   const useWriteCache = initWriteCache();
   const useData = <TData>(
@@ -41,7 +40,6 @@ export const initUseData = ({
       data => (data[reducerName][cacheName] || data[reducerName]) as IState<TData>,
     );
 
-    //temp
     useEffect(() => {
       if (!cacheOnly) fetch();
     }, []);
