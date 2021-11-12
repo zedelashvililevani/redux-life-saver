@@ -1,13 +1,15 @@
 {
   "name": "@zedelashvililevani/redux-life-saver",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "description": "",
+  "type": "module",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files" : [
-    "dist/",
+    "dist/index.js",
+    "dist/index..d.ts",
     "package.json"
   ],
   "devDependencies": {
