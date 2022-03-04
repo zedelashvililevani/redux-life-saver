@@ -37,7 +37,7 @@ const { data, networkStatus } = useData(MyName, {url, params});
 
 
 ### But, that's not all
-**if you use Ultra `Miracle RLS` 2022, you will get brand new read/write from cache for free**
+**if you use Ultra `Miracle RLS` 2022 for free, you will get brand new read/write from cache for totally free**
 ```
 const yourData = useReadCache(MyName);
 ```
