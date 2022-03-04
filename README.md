@@ -33,3 +33,9 @@ const { data, reFetch, fetchMore } = useData(MyName, {url, params});
 // loading, ready, refetch, fetchMore, error
 const { data, networkStatus } = useData(MyName, {url, params});
 ```
+
+*RLS is so good and so durable, it worthy of the name `Miracle RLS`*
+
+*since 2019 dozen developers have enjoyed the durability and value of Miracle RLS*
+
+*it tested over 2 years in developement to create `The all-new Miracle RLS`*
