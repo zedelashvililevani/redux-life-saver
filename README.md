@@ -18,6 +18,11 @@ const { data } = useData(MyName, {url, params});
 ```
 
 
+>**Wait, whaat?**
+
+<img src="https://media2.giphy.com/media/fpXxIjftmkk9y/giphy.gif?cid=ecf05e47p5s3plr3gx8kfb68k0joan9pxna4xkigti49b1du&rid=giphy.gif" width="100" height="100">
+
+
 **A design so extraordinary, it has a `fetch` `reFetch` `fetchMore`**
 
 **to make `fetch` `reFetch` `fetchMore` easier then ever before**
@@ -37,6 +42,9 @@ const { data, networkStatus } = useData(MyName, {url, params});
 
 
 ### But, that's not all
+
+<img src="https://media0.giphy.com/media/11lLyyfu7GfjH2/giphy.gif?cid=790b761179b6bbb7cce285a3679940a7045e4aabf97648eb&rid=giphy.gif" width="100" height="100">
+
 **if you use Ultra `Miracle RLS` 2022 for free, you will get brand new read/write from cache totally free**
 ```
 const yourData = useReadCache(MyName);
