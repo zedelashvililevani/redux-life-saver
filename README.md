@@ -23,6 +23,7 @@ const { data } = useData(MyName, {url, params});
 **to make `fetch` `reFetch` `fetchMore` easier then ever before**
 
 ```
+// of course with it's fetch policys (onFetch, onFetchMore, onError)
 const { data, reFetch, fetchMore } = useData(MyName, {url, params});
 ```
 
@@ -32,6 +33,17 @@ const { data, reFetch, fetchMore } = useData(MyName, {url, params});
 ```
 // loading, ready, refetch, fetchMore, error
 const { data, networkStatus } = useData(MyName, {url, params});
+```
+
+
+### But, that's not all
+**if you use Ultra `Miracle RLS` 2022, you will get brand new read/write from cache for free**
+```
+const yourData = useReadCache(MyName);
+```
+```
+const writeCache = useWriteCache();
+writeCache(MyName, newCache);
 ```
 
 *RLS is so good and so durable, it worthy of the name `Miracle RLS`*
